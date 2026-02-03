@@ -1,7 +1,10 @@
 {
-  "name": "reported-accounts",
+  "name": "report accounts",
   "version": "1.0.0",
+  "description": "report fb accounts! ",
+  "main": "index.js",
   "scripts": {
-    "start": "npx serve ."
+    "start": "node index.js",
+    "dev": "node index.js"
   }
 }
