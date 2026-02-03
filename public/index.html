@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Reported Accounts</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #eaf6ff;
+      margin: 0;
+      padding: 20px;
+    }
+    h1 { text-align: center; }
+    .box {
+      background: #fff;
+      padding: 15px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+    input, button {
+      width: 100%;
+      padding: 10px;
+      margin: 6px 0;
+    }
+    button {
+      background: #4da6ff;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+    }
+    .row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 8px 0;
+    }
+    .fb {
+      color: #1a73e8;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    .hidden { display: none; }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 15px;
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <strong>Reported Accounts</strong>
+  <button onclick="openNav()">☰</button>
+</nav>
+
+<div class="box">
+  <h3>Submit Report (Pending)</h3>
+  <input id="name" placeholder="Name">
+  <input id="number" placeholder="Number">
+  <input id="fb" placeholder="Facebook Link">
+  <button onclick="submitReport()">Submit</button>
+</div>
+
+<div id="adminNav" class="box hidden">
+  <h3>Admin Login</h3>
+  <input id="user" placeholder="Username">
+  <input id="pass" placeholder="Password" type="password">
+  <button onclick="adminLogin()">Login</button>
+</div>
+
+<div class="box">
+  <h3>Approved List</h3>
+  <div id="list"></div>
+</div>
+
+<script src="index.js"></script>
+</body>
+</html>
