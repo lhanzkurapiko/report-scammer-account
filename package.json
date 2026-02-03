@@ -1,9 +1,10 @@
 {
-  "name": "fb share",
+  "name": "shareboost-autumn",
   "version": "1.0.0",
-  "main" : "index.js", 
+  "description": "Share Boost frontend with backend proxy",
+  "main": "index.js",
   "scripts": {
-    "dev": " nods index.js", 
-    "start": "node index.js"
+    "start": "node index.js",
+    "dev": "node index.js"
   }
 }
